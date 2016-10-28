@@ -30,6 +30,7 @@ def login(clear=True, uin='822991868', psw='zq4535'):
     d(index='0', className='android.widget.TextView').click()
     # d.press('back')
     print "4. Login success~"
-    
+
+
 if __name__ == '__main__':
     login()
