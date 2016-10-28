@@ -88,13 +88,13 @@ for fruit in fruits:
     print "当前的水果是： " , fruit
 print "good bye~"
 
-#索引迭代
+# 索引迭代
 for index in range(len(fruits)):
     print "当前的水果是： ", fruits[index]
 print "good bye~"
 
-#for.....else语句
-#for 中的语句和普通的没有区别，else 中的语句会在循环正常执行完（即 for 不是通过 break 跳出而中断的）的情况下执行，while … else 也是一样。
+# for.....else语句
+# for 中的语句和普通的没有区别，else 中的语句会在循环正常执行完（即 for 不是通过 break 跳出而中断的）的情况下执行，while … else 也是一样。
 
 for num in range(10, 20):
     for i in range(2, num):
@@ -106,44 +106,44 @@ for num in range(10, 20):
         print num, "是一个质数"
         
 print "------------循环嵌套--------------"
-#嵌套循环输出2~100之间的素数：
+# 嵌套循环输出2~100之间的素数：
 print "嵌套循环输出2~100之间的素数："
 
 i = 2
 while (i < 100):
     j = 2
-    while(j <= (i/j)):
-        if not(i%j):break
+    while(j <= (i / j)):
+        if not(i % j):break
         j = j + 1
     if (j > i / j) : print i, "是质数"
     i = i + 1 
 print "good bye"
 
-#break和continue语句
+# break和continue语句
 print "break和continue语句"
-#break语句用来终止循环语句，即循环条件没有False条件或者序列还没被完全递归完，也会停止执行循环语句。
-for letter in 'Python':     # First Example
+# break语句用来终止循环语句，即循环条件没有False条件或者序列还没被完全递归完，也会停止执行循环语句。
+for letter in 'Python':  # First Example
     if letter == 'h':
         break
     print 'Current Letter :', letter
   
-var = 10                    # Second Example
+var = 10  # Second Example
 while var > 0:              
     print 'Current variable value :', var
-    var = var -1
+    var = var - 1
     if var == 5:
         break
 print "Good bye!"
 
-#continue 语句用来告诉Python跳过当前循环的剩余语句，然后继续进行下一轮循环。
-for letter in 'Python':     # 第一个实例
+# continue 语句用来告诉Python跳过当前循环的剩余语句，然后继续进行下一轮循环。
+for letter in 'Python':  # 第一个实例
     if letter == 'h':
         continue
     print '当前字母 :', letter
 
-var = 10                    # 第二个实例
+var = 10  # 第二个实例
 while var > 0:              
-    var = var -1
+    var = var - 1
     if var == 5:
         continue
     print '当前变量值 :', var

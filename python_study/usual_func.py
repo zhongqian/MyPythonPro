@@ -12,7 +12,7 @@ print type("hello, world!")
 print type(type(10))
 
 # 格式化输出：这里的%s和%d是占位符，分别是为字符串类型和整型来服务的
-print "%s is %d old" %("she", 20)
+print "%s is %d old" % ("she", 20)
 
 # help()函数查看帮助时需要注意哪些问题
 print help('sys')
@@ -32,6 +32,6 @@ print str1
 str2 = raw_input("raw_input接收您输入的内容：")
 print str2
 
-#raw_input输入中文后，打印 不乱码
+# raw_input输入中文后，打印 不乱码
 info = raw_input('中文输入:').strip().decode(sys.stdin.encoding or locale.getpreferredencoding(True))
 print info.encode("GB18030")

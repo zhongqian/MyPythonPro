@@ -1,4 +1,4 @@
-#coding:utf-8
+# coding:utf-8
 '''
 Created on 2016年10月14日
 
@@ -20,13 +20,13 @@ class Test(unittest.TestCase):
         desired_caps['platformVersion'] = '4.2.2'
         desired_caps['deviceName'] = 'Android Emulator'
         desired_caps['appPackage'] = 'com.tencent.mobileqq'
-        desired_caps['appActivity'] ='.activity.RegisterGuideActivity'
+        desired_caps['appActivity'] = '.activity.RegisterGuideActivity'
     
         self.driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
         QQLogin(self.driver)
 
     def tearDown(self):
-        if (self.driver !=None):
+        if (self.driver != None):
             self.driver.quit()
 
     def testPass(self):
@@ -35,5 +35,5 @@ class Test(unittest.TestCase):
         print 'pass~~'
 
 if __name__ == "__main__":
-    #import sys;sys.argv = ['', 'Test.testName']
+    # import sys;sys.argv = ['', 'Test.testName']
     unittest.main()

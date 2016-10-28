@@ -1,4 +1,4 @@
-#coding:utf-8
+# coding:utf-8
 '''
 Created on 2016年7月7日
 
@@ -37,12 +37,12 @@ def count():
     fs = []
     for i in range(1, 4):
         def f():
-             return i*i
+             return i * i
         fs.append(f)
     return fs
 
 f1, f2, f3 = count()
-print f1(), f2() ,f3()
+print f1(), f2() , f3()
 # 你可能认为调用f1()，f2()和f3()结果应该是1，4，9，但实际结果全部都是 9（请自己动手验证）。
 # 
 # 原因就是当count()函数返回了3个函数时，这3个函数所引用的变量 i 的值已经变成了3。由于f1、f2、f3并没有被调用，所以，此时他们并未计算 i*i，当 f1 被调用时：
@@ -59,7 +59,7 @@ print f1(), f2() ,f3()
 
 def f(j):
     def g():
-        return j*j
+        return j * j
     return g
 # 它可以正确地返回一个闭包g，g所引用的变量j不是循环变量，因此将正常执行。
 # 
@@ -72,7 +72,7 @@ def count():
     for i in range(1, 4):
         def f(j):
             def g():
-                return j*j
+                return j * j
             return g
         r = f(i)
         fs.append(r)
