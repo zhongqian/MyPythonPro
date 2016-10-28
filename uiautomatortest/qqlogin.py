@@ -1,9 +1,9 @@
 # coding:utf-8
-'''
+"""
 Created on 2016年7月7日
 
 @author: Administrator
-'''
+"""
 from uiautomator import device as d
 import time
 import os

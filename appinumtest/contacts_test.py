@@ -1,9 +1,9 @@
 # coding:utf-8
-'''
+"""
 Created on 2016��7��7��
 
 @author: Administrator
-'''
+"""
 import os
 import unittest
 from appium import webdriver
@@ -14,6 +14,7 @@ from decimal import Context
 PATH = lambda p: os.path.abspath(
     os.path.join(os.path.dirname(__file__), p)
 )
+
 
 class ContactsAndroidTests(unittest.TestCase):
     def setUp(self):
@@ -30,9 +31,9 @@ class ContactsAndroidTests(unittest.TestCase):
         self.driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
 
     def tearDown(self):
-#         activity = self.driver.current_activity
-#         context = self.driver.current_context
-#         print activity, context 
+        #         activity = self.driver.current_activity
+        #         context = self.driver.current_context
+        #         print activity, context
         self.driver.quit()
 
     def test_add_contacts(self):
@@ -57,9 +58,6 @@ class ContactsAndroidTests(unittest.TestCase):
         self.driver.press_keycode(3)
 
 
-
 if __name__ == '__main__':
     suite = unittest.TestLoader().loadTestsFromTestCase(ContactsAndroidTests)
     unittest.TextTestRunner(verbosity=2).run(suite)
-    
-    

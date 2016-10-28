@@ -20,7 +20,7 @@ print help('str')
 a = [1, 2, 3]
 print help(a)
 print help(a.append)
- 
+
 # input() ，它希望能够读取一个合法的 python 表达式，
 # 即你输入字符串的时候必须使用引号将它括起来，
 # 否则它会引发一个 SyntaxError 。

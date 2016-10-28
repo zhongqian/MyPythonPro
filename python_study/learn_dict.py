@@ -1,9 +1,9 @@
 # coding=utf-8
-'''
+"""
 Created on 2016-6-27
- 
+
 @author: Administrator
-'''
+"""
 
 # 字典是另一种可变容器模型，且可存储任意类型对象。
 # 字典的每个键值(key=>value)对用冒号(:)分割，每个对之间用逗号(,)分割，整个字典包括在花括号({})中
@@ -36,7 +36,7 @@ del dic  # 删除词典
 # 字典值可以没有限制地取任何python对象，既可以是标准的对象，也可以是用户定义的，但键不行。
 # 两个重要的点需要记住：
 # 1）不允许同一个键出现两次。创建时如果同一个键被赋值两次，后一个值会被记住，如下实例：
-dic = {'Name': 'Zara', 'Age': 7, 'Name': 'Manni'}; 
+dic = {'Name': 'Zara', 'Age': 7, 'Name': 'Manni'};
 print "dic['Name']: ", dic['Name'];
 print dic
 
@@ -52,19 +52,19 @@ dict1 = {'Name': 'Zara', 'Age': 7}
 dict2 = {'Name': 'Mahnaz', 'Age': 27}
 dict3 = {'Name': 'Abid', 'Age': 27}
 dict4 = {'Name': 'Zara', 'Age': 7}
-print "Return Value : %d" % cmp (dict1, dict2)
-print "Return Value : %d" % cmp (dict2, dict3)
-print "Return Value : %d" % cmp (dict1, dict4)
+print "Return Value : %d" % cmp(dict1, dict2)
+print "Return Value : %d" % cmp(dict2, dict3)
+print "Return Value : %d" % cmp(dict1, dict4)
 
 # len()函数
 print "len()计算字典的长度："
 dic = {'Name': 'Zara', 'Age': 7}
-print "Length : %d" % len (dic)
+print "Length : %d" % len(dic)
 
 # str()函数
 print "str()函数，打印字符串输出："
 dic = {'Name': 'Zara', 'Age': 7}
-print "Equivalent String : %s" % str (dic)
+print "Equivalent String : %s" % str(dic)
 
 # 字典的方法：
 print "字典的方法："
@@ -121,8 +121,7 @@ for item in dict.iteritems():
 
 # update(dict2)方法把dict2更新到dict中
 dict = {'Name': 'Zara', 'Age': 7}
-dict2 = {'Sex': 'female' }
+dict2 = {'Sex': 'female'}
 
 dict.update(dict2)
 print "Value : %s" % dict
-
