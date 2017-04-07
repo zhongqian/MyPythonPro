@@ -35,6 +35,15 @@ list4 = extendlist(10)
 list5 = extendlist(123, [])
 list6 = extendlist("a")
 
+class Parent(object):
+    x = 1
+
+class Child1(Parent):
+    pass
+
+class Child2(Parent):
+    pass
+
 
 if __name__ == "__main__":
     print "list1 = %s" % list1
@@ -44,3 +53,9 @@ if __name__ == "__main__":
     print "list4 = %s" % list4
     print "list5 = %s" % list5
     print "list6 = %s" % list6
+
+    print Parent.x, Child1.x, Child2.x
+    Child1.x = 2
+    print Parent.x, Child1.x, Child2.x
+    Parent.x = 3
+    print Parent.x, Child1.x, Child2.x

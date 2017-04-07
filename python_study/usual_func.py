@@ -5,6 +5,7 @@ from comtypes.gen._0E59F1D2_1FBE_11D0_8FF2_00A0D10038BC_0_1_0 import STRING
 # dir()函数可以查看对像内所有属于及方法
 print dir([])
 print dir(sys)
+print dir(__builtins__)
 
 # tpye()函数是对象数据类型查询的方法
 print type(10)
@@ -35,3 +36,4 @@ print str2
 # raw_input输入中文后，打印 不乱码
 info = raw_input('中文输入:').strip().decode(sys.stdin.encoding or locale.getpreferredencoding(True))
 print info.encode("GB18030")
+print info.encode("GB2312")
